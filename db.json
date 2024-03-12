@@ -1,0 +1,49 @@
+{
+  "jobs": [
+    {
+      "id": "27a2e788-6baa-4624-ace8-0e50c510ffc6",
+      "position": "Backend Dev.",
+      "company": "Amazon",
+      "location": "Global",
+      "status": "Mülakat",
+      "type": "Tam Zamanlı",
+      "date": "13.03.2020"
+    },
+    {
+      "id": "338d86dc-f3e4-4915-ba24-886e12043441",
+      "position": "FrontEnd Dev.",
+      "company": "Microsoft",
+      "location": "Almanya",
+      "status": "Devam Ediyor",
+      "type": "Uzaktan",
+      "date": "13.03.2021"
+    },
+    {
+      "id": "3b9b9f9a-0380-458f-b9af-4d4b9e90f708",
+      "position": "Full Stack Dev.",
+      "company": "Tesla",
+      "location": "ABD",
+      "status": "Reddedildi",
+      "type": "Yarı Zamanlı",
+      "date": "13.03.2023"
+    },
+    {
+      "id": "4469aa8f-a7f7-41ce-98fe-8df02a75a6fa",
+      "position": "Mobile Dev.",
+      "company": "Hepsiburada",
+      "location": "İstanbul",
+      "status": "Devam Ediyor",
+      "type": "Staj",
+      "date": "13.03.2022"
+    },
+    {
+      "id": "f4abaf5b-270e-44c1-aa2c-7cac14d071ba",
+      "position": "FrontEnd Dev.",
+      "company": "Udemig",
+      "location": "İsveç",
+      "status": "Devam Ediyor",
+      "type": "Tam Zamanlı",
+      "date": "13.03.2024"
+    }
+  ]
+}

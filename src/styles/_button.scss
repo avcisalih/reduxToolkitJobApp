@@ -1,0 +1,111 @@
+.btn {
+  --glow-color: rgb(27, 55, 24);
+  --glow-spread-color: rgba(15, 150, 74, 0.781);
+  --enhanced-glow-color: rgb(19, 112, 50);
+  --btn-color: rgb(25, 145, 55);
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+  margin-top: 50px;
+}
+
+.btn::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: 0.7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.btn:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+}
+
+.btn:active {
+  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+// button
+
+/* From uiverse.io by @Ali-Tahmazi99 */
+#btn1 {
+  display: inline-block;
+  width: 140px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #16aecd;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+}
+
+#btn1::before,
+#btn1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#btn1::before {
+  left: -5px;
+  background: #155617;
+}
+
+#btn1::after {
+  right: -10px;
+  background: #0a9724;
+}
+
+#btn1:hover::before,
+#btn1:hover::after {
+  width: 58%;
+}
+
+#btn1:hover span {
+  color: #dee4e1;
+  transition: 0.3s;
+}
+
+#btn1 span {
+  color: #03045e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}
+
+@media screen and (min-width: 768px) {
+  #btn1 {
+    margin-left: 300px;
+    width: 250px;
+    /* Diğer boyut ayarları */
+  }
+}
